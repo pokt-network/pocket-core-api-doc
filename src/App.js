@@ -1,28 +1,38 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react'
+import './App.css'
+import axios from 'axios'
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+
+    constructor() {
+        super();
+        this.state = {
+            relayRoutes: '',
+            clientRoutes: ''
+        };
+        this.get = this.get.bind(this)
+    }
+
+    get() {
+        axios.get('http://localhost:8081/v1/routes')
+            .then(response => this.setState({relayRoutes: response.data}))
+        axios.get('http://localhost:8080/v1/routes')
+            .then(response => this.setState({clientRoutes: response.data}))
+    }
+
+    componentDidMount() {
+        this.get()
+    }
+
+    render() {
+        return (
+            <div className='button__container'>
+                <p>{JSON.stringify(this.state.relayRoutes, null, 2)}</p>
+                <br />
+                <p>{JSON.stringify(this.state.clientRoutes, null, 2)}</p>
+            </div>
+        )
+    }
 }
 
-export default App;
+export default App
