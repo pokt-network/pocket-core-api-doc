@@ -4,7 +4,7 @@ import axios from 'axios'
 import Reference from './Reference'
 
 class API extends Component {
-
+    // TODO add constants file for relay and client host
     constructor() {
         super();
         this.state = {
