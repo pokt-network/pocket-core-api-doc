@@ -1,0 +1,14 @@
+.reference-wrapper {
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.ref-container {
+    border: solid black 2px;
+}
+
+.attr-label {
+    background: #c2c2c2;
+    padding: 20px;
+    margin: 0 auto;
+}

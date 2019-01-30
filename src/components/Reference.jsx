@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import Attribute from './Attribute'
 import axios from "axios";
+import './Reference.css'
 
 class Reference extends Component {
     constructor() {
@@ -11,7 +12,6 @@ class Reference extends Component {
     }
 
     getAttributes() {
-        console.log(this.props.url)
         axios.get(this.props.url)
             .then(response => this.setState({response: response.data}))
     }
@@ -21,13 +21,24 @@ class Reference extends Component {
     }
 
     render() {
+        let params;
+        if (this.state.response !== false) {
+            params = JSON.parse(this.state.response.params)
+        }
         return (
-            <div className={"endpoint-container"}>
-                <Attribute attribute={this.state.response.endpoint}/>
-                <Attribute attribute={this.state.response.method}/>
-                <Attribute attribute={this.state.response.params}/>
-                <Attribute attribute={this.state.response.returns}/>
-                <Attribute attribute={this.state.response.example}/>
+            <div className={"reference-wrapper"}>
+                <div className={"ref-container"}>
+                    <h3 className={"attr-label"}>Name</h3>
+                    <Attribute attribute={this.state.response.method}/>
+                    <h3 className={"attr-label"}>Path</h3>
+                    <Attribute attribute={this.state.response.endpoint}/>
+                    <h3 className={"attr-label"}>Parameters</h3>
+                    <Attribute attribute={<pre>{JSON.stringify(params, null, 2)}</pre>}/>
+                    <h3 className={"attr-label"}>Returns</h3>
+                    <Attribute attribute={this.state.response.returns}/>
+                    <h3 className={"attr-label"}>Example</h3>
+                    <Attribute attribute={"curl --data {params object} " + this.state.response.endpoint}/>
+                </div>
             </div>
         )
     }

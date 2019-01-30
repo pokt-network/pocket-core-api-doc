@@ -1,12 +1,14 @@
 import React, {Component} from 'react'
+import "./Attribute.css"
 
 class Attribute extends Component {
     render() {
         return (
             <div className={"attr-container"}>
-                <p className={"attr-paragraph"}>{this.props.attribute}</p>
+                {this.props.attribute}
             </div>
         )
     }
 }
+
 export default Attribute;
