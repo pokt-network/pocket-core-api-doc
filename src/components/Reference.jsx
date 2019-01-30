@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import Attribute from './Attribute'
 import axios from "axios";
+import './Reference.css'
 
 class Reference extends Component {
     constructor() {
@@ -11,7 +12,6 @@ class Reference extends Component {
     }
 
     getAttributes() {
-        console.log(this.props.url)
         axios.get(this.props.url)
             .then(response => this.setState({response: response.data}))
     }
@@ -22,7 +22,7 @@ class Reference extends Component {
 
     render() {
         return (
-            <div className={"endpoint-container"}>
+            <div className={"reference-container"}>
                 <Attribute attribute={this.state.response.endpoint}/>
                 <Attribute attribute={this.state.response.method}/>
                 <Attribute attribute={this.state.response.params}/>
