@@ -1,11 +1,15 @@
 import React, {Component} from 'react'
 import './App.css'
 import API from "./components/API";
+import Head from "./components/Header"
 
 class App extends Component {
     render() {
         return (
-            <API/>
+            <div className={'app-container'}>
+                <Head/>
+                <API/>
+            </div>
         )
     }
 }

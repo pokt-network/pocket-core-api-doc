@@ -32,11 +32,24 @@ class API extends Component {
         const ClientRef = this.state.clientRoutes.map((val, key) => <Reference url={ClientHost + val} key={key}/>);
         return (
             <div className='reference-body'>
-                <h1>Relay API Reference</h1>
+                <h2>Relay API Reference</h2>
+                <p>
+                    Pocket Core's Relay RPC is for all things 2nd layer specific.
+                    What is meant by this is any API call that does not pertain to the Pocket Blockchain will be
+                    accessed through this endpoint.
+                    Think Dispatching, Servicing, Validating, and Sessions.
+                </p>
                 <div className={'reference-container'}>
                     {RelayRef}
                 </div>
-                <h1>Client API Reference</h1>
+                <h2>Client API Reference</h2>
+                <p>
+                    Pocket Core's Client RPC is for all things blockchain specific.
+                    What is meant by this is any API call that does pertaining to the Pocket Blockchain will be
+                    accessed through this endpoint.
+                    Think anything that could be found withing Bitcoin or Ethereum will be accessed through this
+                    endpoint.
+                </p>
                 <div className={'reference-container'}>
                     {ClientRef}
                 </div>
