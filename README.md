@@ -1,4 +1,4 @@
-# Pocket Core Api Documentation
+# Pocket Core API Documentation
 A web front end for the Pocket Core API that is loaded dynamically.
 
 ## Welcome to Pocket Core MVP Docs
