@@ -14,7 +14,7 @@ Just a tip: this guide is simply a front end to a series of already exposed GET 
 ## Purpose
 Currently only purposed for internal use only. The purpose of this simple app is to provide an easy to read interface for new developers developing projects that interact with PC API.
 
-![Screen](/screen.PNG)
+![Screen](/screen.png)
 
 ## License
 [MIT](https://opensource.org/licenses/MIT)
