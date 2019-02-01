@@ -3,6 +3,7 @@ A web front end for the Pocket Core API that is loaded dynamically.
 
 <a href="https://reactjs.org/"><img src="https://img.shields.io/badge/framework-reactjs-red.svg"/></a>
 <a href="https://github.com/facebook/create-react-app"><img src="https://img.shields.io/badge/bootstrap-create%20react%20app-blue.svg"/></a>
+<a href="www.npmjs.com/package/axios"><img src="https://img.shields.io/badge/http-axios-orange.svg"/></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-green.svg"/></a>
 
 ## Welcome to Pocket Core MVP Docs
