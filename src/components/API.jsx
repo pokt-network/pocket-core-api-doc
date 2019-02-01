@@ -48,7 +48,7 @@ class API extends Component {
                     Pocket Core's Relay RPC is for all things 2nd layer specific.
                     What is meant by this is any API call that does not pertain to the Pocket Blockchain will be
                     accessed through this endpoint.
-                    Think Dispatching, Servicing, Validating, and Sessions.
+                    Think dispatching, servicing, validating, and sessions.
                 </p>
                 <div className={'reference-container'}>
                     {RelayRef}
