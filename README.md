@@ -1,6 +1,10 @@
 # Pocket Core API Documentation
 A web front end for the Pocket Core API that is loaded dynamically.
 
+<a href="https://reactjs.org/"><img src="https://img.shields.io/badge/framework-reactjs-red.svg"/></a>
+<a href="https://github.com/facebook/create-react-app"><img src="https://img.shields.io/badge/bootstrap-create%20react%20app-blue.svg"/></a>
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-green.svg"/></a>
+
 ## Welcome to Pocket Core MVP Docs
 This simple API guide is an easy to use reference for Pocket Core (MVP). Pocket Core's API may be designed differently then API's you have seen before. It is a blend between a RESTful and a JSON RPC architecture. Using the guide below, it should be very apparent how to access the API from each endpoint.
 
