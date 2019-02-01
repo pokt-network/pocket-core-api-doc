@@ -6,7 +6,7 @@ A web front end for the Pocket Core API that is loaded dynamically.
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-green.svg"/></a>
 
 ## Welcome to Pocket Core MVP Docs
-This simple API guide is an easy to use reference for Pocket Core (MVP). Pocket Core's API may be designed differently then API's you have seen before. It is a blend between a RESTful and a JSON RPC architecture. Using the guide below, it should be very apparent how to access the API from each endpoint.
+This simple API guide is an easy to use reference for [Pocket Core (MVP)](https://github.com/pokt-network/pocket-core). Pocket Core's API may be designed differently then API's you have seen before. It is a blend between a RESTful and a JSON RPC architecture. Using the guide below, it should be very apparent how to access the API from each endpoint.
 
 Just a tip: this guide is simply a front end to a series of already exposed GET requests. So if you're running a PC instance, just go to localhost:port/v1/routes to see all the possible routes and visit each route through your browser to see a local JSON version of this guide!
 
