@@ -43,9 +43,9 @@ class API extends Component {
             <Reference url={Constants.CAPIURL + val} key={key}/>);
         return (
             <div className='reference-body'>
-                <h2>Relay API Reference</h2>
+                <h2>API Reference</h2>
                 <p>
-                    Pocket Core's Relay RPC is for all things 2nd layer specific.
+                    Pocket Core's MVP RPC is for all things 2nd layer specific.
                     What is meant by this is any API call that does not pertain to the Pocket Blockchain will be
                     accessed through this endpoint.
                     Think dispatching, servicing, validating, and sessions.
@@ -53,17 +53,17 @@ class API extends Component {
                 <div className={'reference-container'}>
                     {RelayRef}
                 </div>
-                <h2>Client API Reference</h2>
-                <p>
-                    Pocket Core's Client RPC is for all things blockchain specific.
-                    What is meant by this is any API call that does pertaining to the Pocket Blockchain will be
-                    accessed through this endpoint.
-                    Think anything that could be found withing Bitcoin or Ethereum will be accessed through this
-                    endpoint.
-                </p>
-                <div className={'reference-container'}>
-                    {ClientRef}
-                </div>
+                {/*<h2>Client API Reference</h2>*/}
+                {/*<p>*/}
+                    {/*Pocket Core's Client RPC is for all things blockchain specific.*/}
+                    {/*What is meant by this is any API call that does pertaining to the Pocket Blockchain will be*/}
+                    {/*accessed through this endpoint.*/}
+                    {/*Think anything that could be found withing Bitcoin or Ethereum will be accessed through this*/}
+                    {/*endpoint.*/}
+                {/*</p>*/}
+                {/*<div className={'reference-container'}>*/}
+                    {/*{ClientRef}*/}
+                {/*</div>*/}
             </div>
         )
     }
